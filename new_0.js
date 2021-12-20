@@ -51,3 +51,87 @@ const myMusic = [
 //       "gold": true
 //     }
 //   ];
+
+const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+  
+//   const gloveBoxContents = myStorage.car.inside["glove box"];
+
+//   The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
+
+// Here is a nested object:
+
+// const ourStorage = {
+//   "desk": {
+//     "drawer": "stapler"
+//   },
+//   "cabinet": {
+//     "top drawer": { 
+//       "folder1": "a file",
+//       "folder2": "secrets"
+//     },
+//     "bottom drawer": "soda"
+//   }
+// };
+
+// ourStorage.cabinet["top drawer"].folder2;
+// ourStorage.desk.drawer;
+// ourStorage.cabinet["top drawer"].folder2 would be the string secrets, 
+// and ourStorage.desk.drawer would be the string stapler.
+
+const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+  
+  const secondTree = myPlants[1].list[1];
+
+
+
+// Here is an example of how to access a nested array:
+
+// const ourPets = [
+//   {
+//     animalType: "cat",
+//     names: [
+//       "Meowzer",
+//       "Fluffy",
+//       "Kit-Cat"
+//     ]
+//   },
+//   {
+//     animalType: "dog",
+//     names: [
+//       "Spot",
+//       "Bowser",
+//       "Frankie"
+//     ]
+//   }
+// ];
+
+// ourPets[0].names[1];
+// ourPets[1].names[0];
+// ourPets[0].names[1] would be the string Fluffy, and ourPets[1].names[0] would be the string Spot.
