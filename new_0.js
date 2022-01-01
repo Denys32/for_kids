@@ -1,4 +1,4 @@
-document.body.innerHTML = <h1>JSjsj</h1>
+// document.body.innerHTML = <h1>JSjsj</h1>
 
 function checkObj(obj, checkProp) {
     if (obj.hasOwnProperty(checkProp)) {
