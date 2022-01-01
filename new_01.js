@@ -26,14 +26,51 @@
 // }
 // console.log(total)
 
-function multiplyAll(arr) {
-    let product = 1;  
-  for(let i = 0; i < arr.length; i++){
-    for(let o = 0;o < arr[i].length; o++){
-     product *= arr[i][o];
-    } 
-  }
-    return product;
+// function multiplyAll(arr) {
+//     let product = 1;  
+//   for(let i = 0; i < arr.length; i++){
+//     for(let o = 0;o < arr[i].length; o++){
+//      product *= arr[i][o];
+//     } 
+//   }
+//     return product;
+//   }
+  
+//   multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+// const myArray = [];
+// let i = 10;
+//     do {
+//         myArray.push(i); i++;
+//     } while (i < 11)
+         
+//!!!!!!!_RECURSION_!!!!!!!!
+// function sum(arr, n) {
+//   if (n <= 0) {
+//         return 0;
+//       } else {
+//         return sum(arr, n - 1) + arr[n - 1];
+//       }
+//   }
+
+const contacts = [
+    {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+    }
+  
+    
+  ];
+  
+  function lookUpProfile(name, prop) {
+    ; i++){
+      if(contacts[i].firstName === name) {
+        return contacts[i][prop] || "No such property";
+      }
+      }
+      return "No such contact"
   }
   
-  multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+  lookUpProfile("Akira", "likes");
