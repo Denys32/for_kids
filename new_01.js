@@ -10,9 +10,20 @@
 //     }
 //     return records;
 
-const myArray = [];
+// const myArray = [];
 
-for (let i = 0; i <= 9; i += 3) {
-    myArray.push(i);
-  }
-  console.log(myArray);
+// for (let i = 0; i <= 9; i += 3) {
+//     myArray.push(i);
+//   }
+//   console.log(myArray);
+
+const myArr = [2, 3, 4, 5, 6];
+
+let total = 0
+
+for(let i = 0; i < myArr.length; i++){
+ total += myArr[i];
+}
+console.log(total)
+
+
