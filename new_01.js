@@ -53,24 +53,38 @@
 //       }
 //   }
 
-const contacts = [
-    {
-      firstName: "Akira",
-      lastName: "Laine",
-      number: "0543236543",
-      likes: ["Pizza", "Coding", "Brownie Points"],
-    }
+// const contacts = [
+//     {
+//       firstName: "Akira",
+//       lastName: "Laine",
+//       number: "0543236543",
+//       likes: ["Pizza", "Coding", "Brownie Points"],
+//     }
   
     
-  ];
+//   ];
   
-  function lookUpProfile(name, prop) {
-    ; i++){
-      if(contacts[i].firstName === name) {
-        return contacts[i][prop] || "No such property";
-      }
-      }
-      return "No such contact"
+//   function lookUpProfile(name, prop) {
+//     ; i++){
+//       if(contacts[i].firstName === name) {
+//         return contacts[i][prop] || "No such property";
+//       }
+//       }
+//       return "No such contact"
+//   }
+  
+//   lookUpProfile("Akira", "likes");
+
+function nextInLine(arr, item) {
+    arr.push(item)
+    item = arr.shift()
+    return item;
   }
   
-  lookUpProfile("Akira", "likes");
+  // Setup
+  const testArr = [1, 2, 3, 4, 5];
+  
+  // Display code
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
