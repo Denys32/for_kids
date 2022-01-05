@@ -44,7 +44,7 @@
 //         myArray.push(i); i++;
 //     } while (i < 11)
          
-//!!!!!!!_RECURSION_!!!!!!!!
+// !!!!!!!_RECURSION_!!!!!!!!
 // function sum(arr, n) {
 //   if (n <= 0) {
 //         return 0;
@@ -75,16 +75,25 @@
   
 //   lookUpProfile("Akira", "likes");
 
-function nextInLine(arr, item) {
-    arr.push(item)
-    item = arr.shift()
-    return item;
+// function nextInLine(arr, item) {
+//     arr.push(item)
+//     item = arr.shift()
+//     return item;
+//   }
+  
+//   // Setup
+//   const testArr = [1, 2, 3, 4, 5];
+  
+//   // Display code
+//   console.log("Before: " + JSON.stringify(testArr));
+//   console.log(nextInLine(testArr, 6));
+//   console.log("After: " + JSON.stringify(testArr));
+
+function testLogicalAnd(val) {
+    if (val >= 25 && val <= 50) {
+        return "Yes";
+      }
+    return "No";
   }
   
-  // Setup
-  const testArr = [1, 2, 3, 4, 5];
-  
-  // Display code
-  console.log("Before: " + JSON.stringify(testArr));
-  console.log(nextInLine(testArr, 6));
-  console.log("After: " + JSON.stringify(testArr));
+  testLogicalAnd(10);
