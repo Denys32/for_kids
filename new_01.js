@@ -89,11 +89,26 @@
 //   console.log(nextInLine(testArr, 6));
 //   console.log("After: " + JSON.stringify(testArr));
 
-function testLogicalAnd(val) {
-    if (val >= 25 && val <= 50) {
-        return "Yes";
-      }
-    return "No";
-  }
+// function testLogicalAnd(val) {
+//     if (val >= 25 && val <= 50) {
+//         return "Yes";
+//       }
+//     return "No";
+//   }
   
-  testLogicalAnd(10);
+//   testLogicalAnd(10);
+
+function testSize(num) { 
+    if(num < 5){
+      return "Tiny"
+    }else if(num < 10){
+      return "Small"
+    }else if(num < 15){
+      return "Medium"
+    }else if(num < 20){
+      return "Large"
+    }else if(num >= 20){
+      return "Huge"
+    }
+    }
+    
