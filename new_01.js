@@ -221,10 +221,58 @@
 //     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 //   }
 
-const myDog = {
-    "name": "Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"]
-  };
-  myDog["name"] = "Happy Coder";
+// const myDog = {
+//     "name": "Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+//   myDog["name"] = "Happy Coder";
+
+// const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+//   };
+//   myDog["bark"] = "woof";
+
+// const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"],
+//     "bark": "woof"
+//   };
+//   delete myDog.tails;
+
+// let lookup {
+//     "alpha": "Adams",
+//     "bravo": "Boston",
+//     "charlie": "Chikago",
+//     "delta": "Denver",
+//     "echo": "Easy",
+//     "foxtrot": "Frank"
+// }
+
+// function phoneticLookup(val) {
+//     let result = "";
+//     let lookup = {
+//       "alpha": "Adams",
+//       "bravo": "Boston",
+//       "charlie": "Chicago",
+//       "delta": "Denver",
+//       "echo": "Easy",
+//       "foxtrot": "Frank"
+//   }
+//   result = lookup[val]
+//     return result;
+// }
+
+function checkObj(obj, checkProp) {
+    if(obj.hasOwnProperty(checkProp)) {
+      return obj[checkProp];
+      }else{
+        return "Not Found";
+      }
+  }
